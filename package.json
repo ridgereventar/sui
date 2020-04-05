@@ -1,10 +1,10 @@
 {
-  "name": "sui-ui",
-  "version": "1.0.0",
+  "name": "@ridgereventar/sui",
+  "version": "1.0.1",
   "description": "",
   "author": "ridgereventar",
   "license": "MIT",
-  "repository": "ridgereventar/sui-ui",
+  "repository": "ridgereventar/sui",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -41,6 +41,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "react": "^16.13.1",
@@ -51,7 +52,9 @@
     "dist"
   ],
   "dependencies": {
-    "classnames": "^2.2.6",
-    "node-sass": "^4.13.1"
+    "classnames": "^2.2.6"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/ridgereventar"
   }
 }

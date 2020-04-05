@@ -1,13 +1,13 @@
 {
-  "name": "sui-ui-example",
-  "homepage": "https://ridgereventar.github.io/sui-ui",
+  "name": "sui-example",
+  "homepage": "https://ridgereventar.github.io/sui",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
-    "sui-ui": "file:.."
+    "sui": "file:.."
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",

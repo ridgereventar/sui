@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { ThemeContextProvider, Button } from 'sui-ui'
-import testData from './testData.json';
-import 'sui-ui/dist/index.css'
+import { ThemeContextProvider, Button } from 'sui'
+import theme from './testData.json';
+import 'sui/dist/index.css'
 
 const App = () => {
   return (
-    <ThemeContextProvider value={testData}>
-      <Button/>
+    <ThemeContextProvider value={theme}>
+      <Button theme={theme}/>
     </ThemeContextProvider>
   )
 }

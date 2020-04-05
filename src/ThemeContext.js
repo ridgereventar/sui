@@ -48,7 +48,7 @@ export class ThemeContextProvider extends React.Component {
         if(props.value) {
             this.state = props.value;
         } else {
-            state = initialState;
+            this.state = initialState;
         }
     }
 
