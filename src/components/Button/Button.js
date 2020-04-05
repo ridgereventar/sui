@@ -1,38 +1,28 @@
 import React, { useContext } from 'react';
 import cx from 'classnames';
-
-import './Button.css'
-
+import css from './Button.module.scss';
 import ThemeContext from '../../ThemeContext';
 
 const Button = (props) => {
-    
+    const {roundness, border, fill, colorIndex, children} = props;
     const theme = useContext(ThemeContext);
-    console.log(theme);
     const {colors} = theme;
 
     return (
-        
         <button className={cx(
-            "btn-basic",
-            `btn--roundness-${props.roundness}`, 
+            css.root,
             {
-                ["btn-border"]: props.border                
+                [css[`roundness_${roundness}`]]: !!roundness,
+                [css.border]: border                
             })} 
             style={{
-                border: props.border ? `solid ${colors[props.filter].hex} 1px` : 'none',
-                backgroundColor: props.fill ? colors[props.filter].hex : 'transparent'
+                border: border ? `solid ${colors[colorIndex].hex} 1px` : 'none',
+                backgroundColor: fill ? colors[colorIndex].hex : 'transparent'
             }}>
             Basic
-            {props.children}
+            {children}
         </button>
     )
-}
-
-
-Button.defaultProps = {
-    fill: true,
-    filter: 3
 }
 
 export default Button;
