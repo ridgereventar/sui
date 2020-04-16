@@ -13,15 +13,23 @@ npm install @ridgereventar/sui
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react';
+import './App.css';
 
-import MyComponent from 'sui-ui'
-import 'sui-ui/dist/index.css'
+import {ThemeContextProvider, Button, InputText} from '@ridgereventar/sui';
+import '@ridgereventar/sui/dist/index.css';
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+import theme from './theme.json'; // file from SUi.com
+
+function App() {
+  return (
+    <ThemeContextProvider value={theme}>
+      <h1> Sample Header </h1>
+      <Button
+        colorIndex={1}
+        border={true}/>
+    </ThemeContextProvider>
+  );
 }
 ```
 
