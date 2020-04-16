@@ -1,5 +1,8 @@
 import React from 'react'
-// import styles from './styles.module.css'
+
+// The following are all distributed and available for user to import: 
+// ThemeContextProvider, Button, InputText
+
 import ThemeContextExport, { ThemeContextProvider as ThemeContextExportProvider } from './ThemeContext';
 
 export { default as Button } from './components/Button/Button';

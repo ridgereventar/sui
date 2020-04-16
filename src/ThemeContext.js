@@ -41,6 +41,8 @@ const initialState = {
 
 export class ThemeContextProvider extends React.Component {
 
+    // The Theme Context is set to the value prop given by the user. 
+    // If no value is given, Theme Context will be a blank template called 'initialState'
     
     constructor(props) {
         super(props);
