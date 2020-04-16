@@ -1,4 +1,4 @@
-# sui-ui
+# sui
 
 > 
 
@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save sui-ui
+npm install @ridgereventar/sui
 ```
 
 ## Usage
